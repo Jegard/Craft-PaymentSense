@@ -1,0 +1,5 @@
+{
+    "require": {
+        "coatesap/omnipay-paymentsense": "^3.0"
+    }
+}

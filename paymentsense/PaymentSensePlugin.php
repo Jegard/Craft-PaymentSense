@@ -57,8 +57,8 @@ class PaymentSensePlugin extends BasePlugin
     public function commerce_registerGatewayAdapters(){
         if($this->commerceInstalled) {
             require __DIR__ . '/vendor/autoload.php';
-            require_once __DIR__.'/Ogone_GatewayAdapter.php';
-            return ['\Commerce\Gateways\Omnipay\Ogone_GatewayAdapter'];
+            require_once __DIR__.'/PaymentSense_GatewayAdapter.php';
+            return ['\Commerce\Gateways\Omnipay\PaymentSense_GatewayAdapter'];
         }
         return [];
     }
