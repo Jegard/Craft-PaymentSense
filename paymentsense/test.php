@@ -1,5 +1,7 @@
 <?php
+
 namespace Coatesap\PaymentSense;
+require __DIR__ . '/vendor/autoload.php';
 use Omnipay\Common\CreditCard;
 use Omnipay\Tests\GatewayTestCase;
 class GatewayTest extends GatewayTestCase
