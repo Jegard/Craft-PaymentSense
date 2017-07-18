@@ -1,5 +1,7 @@
 {
-    "require": {
-        "coatesap/omnipay-paymentsense": "^3.0"
+  "autoload": {
+        "psr-4": {
+            "Omnipay\\PaymentSense\\": "src/"
+        }
     }
 }

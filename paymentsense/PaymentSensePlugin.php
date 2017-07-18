@@ -41,7 +41,7 @@ class PaymentSensePlugin extends BasePlugin
      */
     public function getDeveloper()
     {
-        return "Luke Holder";
+        return "Luca Jegard";
     }
 
     /**
@@ -57,8 +57,11 @@ class PaymentSensePlugin extends BasePlugin
     public function commerce_registerGatewayAdapters(){
         if($this->commerceInstalled) {
             require __DIR__ . '/vendor/autoload.php';
+
             require_once __DIR__.'/PaymentSense_GatewayAdapter.php';
+
             return ['\Commerce\Gateways\Omnipay\PaymentSense_GatewayAdapter'];
+
         }
         return [];
     }

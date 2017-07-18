@@ -4,76 +4,27 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitee7ce4488d934dd21ec3e5e90b17791c
+class ComposerStaticInit2861f8f9c2e3f1b7d53646382a38603f
 {
-    public static $files = array (
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
-        'S' => 
+        'O' => 
         array (
-            'Symfony\\Polyfill\\Mbstring\\' => 26,
-            'Symfony\\Component\\HttpFoundation\\' => 33,
-            'Symfony\\Component\\EventDispatcher\\' => 34,
-        ),
-        'C' => 
-        array (
-            'Coatesap\\PaymentSense\\' => 22,
+            'Omnipay\\PaymentSense\\' => 21,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Symfony\\Polyfill\\Mbstring\\' => 
+        'Omnipay\\PaymentSense\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+            0 => __DIR__ . '/../..' . '/src',
         ),
-        'Symfony\\Component\\HttpFoundation\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/http-foundation',
-        ),
-        'Symfony\\Component\\EventDispatcher\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
-        ),
-        'Coatesap\\PaymentSense\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/coatesap/omnipay-paymentsense/src',
-        ),
-    );
-
-    public static $prefixesPsr0 = array (
-        'O' => 
-        array (
-            'Omnipay\\Common\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/omnipay/common/src',
-            ),
-        ),
-        'G' => 
-        array (
-            'Guzzle\\Tests' => 
-            array (
-                0 => __DIR__ . '/..' . '/guzzle/guzzle/tests',
-            ),
-            'Guzzle' => 
-            array (
-                0 => __DIR__ . '/..' . '/guzzle/guzzle/src',
-            ),
-        ),
-    );
-
-    public static $classMap = array (
-        'Omnipay\\Omnipay' => __DIR__ . '/..' . '/omnipay/common/src/Omnipay/Omnipay.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitee7ce4488d934dd21ec3e5e90b17791c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitee7ce4488d934dd21ec3e5e90b17791c::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitee7ce4488d934dd21ec3e5e90b17791c::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitee7ce4488d934dd21ec3e5e90b17791c::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit2861f8f9c2e3f1b7d53646382a38603f::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit2861f8f9c2e3f1b7d53646382a38603f::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
